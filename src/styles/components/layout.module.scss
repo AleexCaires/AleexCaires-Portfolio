@@ -1,0 +1,15 @@
+@import "../_base/variables.scss";
+
+.site-container {
+    position: relative;
+    width: 100%;
+    margin: $headerHeight 0 0 0;
+}
+
+.content-container {
+    position: relative;
+    width: 100%;
+    margin:  0;
+    padding: 0;
+    min-height: calc(100vh -  #{$headerHeight});
+}

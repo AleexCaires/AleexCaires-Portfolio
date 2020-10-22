@@ -1,0 +1,10 @@
+@mixin media($media) {
+
+	// Please avoind using media queries to set mobile styling, this application should be mobile first
+	@if $media == 'max-mobile' {@media screen and  (max-width: $mobileMax) {@content;}}
+	@if $media == 'min-tablet' {@media screen and  (min-width: $tabletMin) {@content;}}
+	@if $media == 'max-tablet' {@media screen and  (max-width: $tabletMax) {@content;}}
+	@if $media == 'min-desktop' {@media screen and  (min-width: $desktopMin) {@content;}}
+	
+
+}
