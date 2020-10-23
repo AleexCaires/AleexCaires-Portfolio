@@ -12,6 +12,9 @@ const Header = () => (
 	<header>
 		
 		<div className={HeaderStyle.navToggle}>
+            <div className={HeaderStyle.logo}>
+                <a href="#0"><img src="../images/<TC"></a>
+            </div>
 			<span></span>
 			<span></span>
 			<span></span>
