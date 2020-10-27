@@ -4,6 +4,7 @@ $line:#FF5252;
 $gradient1:#7F5A83;
 $gradient2:#303952;
 $grad:linear-gradient(to bottom,$gradient2,$gradient1);
+$gradMobile : linear-gradient(to bottom,$gradient2,$line );
 
 $headerHeight: 60px;
 $maxwidth: 960px;

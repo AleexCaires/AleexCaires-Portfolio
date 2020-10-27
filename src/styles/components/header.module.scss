@@ -1,49 +1,6 @@
 @import "../_base/variables";
 @import "../mixins/media";
 
-
-.mobileNav {
-	position: fixed;
-	top: -100%;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	width: 100%;
-	height: calc(100% - #{$headerHeight});
-	text-align: center;
-	list-style: none;
-	padding: 0;
-	margin: 0;
-	z-index: 50;
-	background-color: white;
-	opacity: 0;
-	transition: all 0.4s ease-in-out;
-	@include media('min-desktop') {
-		display: none;
-	}
-
-	a {
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: center;
-		align-items: center;
-		text-decoration: none;
-		padding: 5px;
-		height: $headerHeight;
-
-		&:hover {
-			background-color: $primary;
-			color: white;
-		}
-	}
-
-	&.open-nav {
-		opacity: 1;
-		top: $headerHeight;
-		transition: all 0.4s ease-in-out;
-	}
-}
 header {
 	width: 100%;
 	height: $headerHeight;
@@ -51,105 +8,163 @@ header {
 	top: 0;
 	left: 0;
 	right: 0;
-	padding: 0 10px;
-    background-color: #303952;
-	z-index: 3;
+	padding: 0 25px;
+	background-color: #303952;
+	z-index: 9;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-between;
+	
+	.mobileNav {
+		position: absolute;
+		top: 100%;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		height: calc(100vh - #{$headerHeight});
+		text-align: center;
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		background-color:$gradMobile;
+		opacity: 0;
+		transform: translateY(-120%);
+		transition: all 0.4s ease-in-out;
+		z-index: -1;
 
-	}
-
-	.navToggle {
-		height: 18px;
-        margin-right: 10px;
-        margin-top: 15px;
-		position: relative;
-        width: 24px;
-        
 		@include media('min-desktop') {
 			display: none;
 		}
-
-		span {
-			background-color:white;
-			border-radius: 4px;
-			height: 2px;
-			left: 0;
+	
+		a {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			padding: 5px;
+			height: $headerHeight;
+			color: white;
+			border-bottom: 1.5px solid $line ;
+	
+			&:hover {
+				color: white;
+				background-color: $gradMobile;
+			}
+		}
+		&.open{
+			transform: translateY(0%);
 			opacity: 1;
-			position: absolute;
-			right: 0;
-			top: 0;
-			transition: all 0.4s ease-in-out;
-			width: 100%;
+			background-color:$primary;
+		}
+	}
+	.navToggle {
+	height: 20px;
+	position: relative;
+	width: 24px;
+	cursor: pointer;
+	display: block;
+
+	
+	@include media('min-desktop') {
+		display: none;
+	}
+
+	span {
+		background-color:white;
+		border-radius: 4px;
+		height: 4px;
+		left: 0;
+		opacity: 1;
+		position: absolute;
+		right: 0;
+		top: 0;
+		transition: all 0.4s ease-in-out;
+		width: 100%;
+		
+
+		&:nth-child(1) {
+			top: 8px;
+		}
+
+		&:nth-child(2) {
+			top: 8px;
+		}
+
+		&:nth-child(3) {
+			bottom: 0;
+			top: auto;
+		}
+	}
+
+	&.open {
+		span {
+			&:nth-child(1) {
+				opacity: 0;
+			}
 
 			&:nth-child(2) {
+				transform: rotate(45deg);
+				width: 35px;
 				top: 8px;
 			}
 
 			&:nth-child(3) {
-				top: 8px;
+				transform: rotate(-45deg);
+				width: 35px;
+				bottom: 8px;
 			}
 
 			&:nth-child(4) {
-				bottom: 0;
-				top: auto;
-			}
-		}
-
-		&.open {
-			span {
-				&:nth-child(1) {
-					opacity: 0;
-				}
-
-				&:nth-child(2) {
-					transform: rotate(45deg);
-				}
-
-				&:nth-child(3) {
-					transform: rotate(-45deg);
-				}
-
-				&:nth-child(4) {
-					opacity: 0;
-				}
+				opacity: 0;
 			}
 		}
 	}
-
+}
 	.navigation {
-		padding: 0;
-		margin: 0;
-		display: none;
+	position: relative;
+	top: auto;
+	display: none;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	min-width: 0;
+	height: 100%;
+	width: 100%;
 
-		.navItem {
-			position: relative;
-			list-style: none;
+	@include media('min-desktop') {
+		display: flex;
+	}
 
-			a {
-				display: flex;
-				flex-direction: row;
-				flex-wrap: nowrap;
-				justify-content: center;
-				align-items: center;
-				text-decoration: none;
-				padding: 5px 10px;
-				margin-left: 10px;
-                height: $headerHeight;
-                color: white;
+	.navItem {
+		position: relative;
+		list-style: none;
 
-				&:hover {
-					background-color: $primary;
-					color: #FF5252;
-				}
-			}
-		}
+		a {
+			height: 100%;
+			align-items: center;
+			text-decoration: none;
+			padding: 5px 10px;
+			margin-left: 10px;
+			height: $headerHeight;
+			color: white;
 
-		&.DesktopNav {
-			@include media('min-desktop') {
-				display: flex;
-				flex-direction: row;
-				flex-wrap: nowrap;
-				justify-content: flex-end;
-				align-items: center;
+			&:hover {
+				background-color: $primary;
+				color: #FF5252;
 			}
 		}
 	}
+
+	}
+}
+
+
+
+
+
