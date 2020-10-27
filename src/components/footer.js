@@ -1,12 +1,12 @@
 import React from "react"
 import $ from "jquery/dist/jquery"
-import IGICON from "../components/i-ig"
+//import IGICON from "../components/i-ig"
 import FooterStyle from "../styles/components/footer.module.scss"
 
 class Footer extends React.Component {
 
     componentDidMount() {
-        const footer = $('footer');
+        //const footer = $('footer');
         const dateFooter = $('#footer-date');
         const now = new Date();
         dateFooter.html(now.getFullYear());
