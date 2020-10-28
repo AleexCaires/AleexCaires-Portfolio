@@ -7,7 +7,6 @@ import layoutStyles from '../styles/components/layout.module.scss';
 const Layout = (props) => (
     <section className={layoutStyles.siteContainer}>
         <Header />
-        <div className={layoutStyles.line}></div>
         <section className={layoutStyles.contentContainer} >
             {props.children}  
         </section>

@@ -37,10 +37,11 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         margin: 25px;
-        background-color: $primary;
+        //background-color: $primary;
         
         img{
             border-right: 5px solid $line;
+            width: 30%;
         }
         
         .text{
