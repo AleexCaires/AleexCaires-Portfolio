@@ -1,6 +1,14 @@
 @import "../_base/variables";
 @import "../mixins/media";
 
+@keyframes blink {
+    0% {opacity: 0;}
+    49% {opacity: 0;}
+    50% {opacity: 1;}
+    99% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
 #hero{
     width: 100%;
     height: 90vh;
@@ -26,8 +34,20 @@
         font-size: 30px;
         line-height: 30pt;
         span{
+            position: relative;
             color:$line;
-            display:none;
+            margin-right: 5px;
+            &:after {
+                content: "";
+                position: absolute;
+                right: -4px;
+                top: 0;
+                bottom: 0;
+                width: 2px;
+                background-color:$line;
+                opacity: 0;
+                animation: blink 0.8s linear 0s infinite forwards;
+            }
         }
     }
     a{
