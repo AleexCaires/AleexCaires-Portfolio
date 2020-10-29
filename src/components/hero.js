@@ -66,6 +66,11 @@ class Hero extends React.Component {
                         <h2>I am Tiago Caires a<br/><span id="text">Web Developer</span> from London.</h2>
                         <a className="btn" href="https://google.com" target="_blank" rel="noreferrer">Learn More</a>
                     </div>
+                    <span className={[HeroStyles.circle, HeroStyles.circle1].join(' ')}></span>
+                    <span className={[HeroStyles.circle, HeroStyles.circle2].join(' ')}></span>
+                    <span className={[HeroStyles.circle, HeroStyles.circle3].join(' ')}></span>
+                    <span className={[HeroStyles.circle, HeroStyles.circle4].join(' ')}></span>
+                    <span className={[HeroStyles.circle, HeroStyles.circle5].join(' ')}></span>
                 </div>
             )
         }
