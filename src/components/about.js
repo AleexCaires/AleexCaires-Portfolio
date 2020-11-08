@@ -4,19 +4,23 @@ import images from '../images/avatar..jpg'
 
 
 const About = () => (
-<div id={AboutStyles.main}>
+  <div id={AboutStyles.main}>
     <h1>About me</h1>
     <div className={AboutStyles.inner}>
-        <div className={AboutStyles.mainItem}>
+      <div className={AboutStyles.mainItem}>
         <img src={images} alt="Avatar" />
 
-            <div className ={AboutStyles.text}>  
-                <p>Hello my name is Tiago Caires, i am 22 Years old, originaly from Portugal, Madeira Island  </p>
-            </div> 
-        </div>    
-    </div>
-</div>  
+        <div className={AboutStyles.text}>
+          <p>
+            Hello my name is Tiago Caires, i am 22 Years old, originally from
+            Portugal, Madeira Island, where i studied Science and Technology, to the United Kingdom where i started learning and dived into programming since 2018.
 
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 )
 
 

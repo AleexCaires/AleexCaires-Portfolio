@@ -1,17 +1,17 @@
-$primary : #303952;
-$secondary : #00cec9;
-$line:#FF5252;
-$gradient1:#7F5A83;
-$gradient2:#303952;
-$grad:linear-gradient(to bottom,$gradient2,$gradient1);
-$grad2:linear-gradient(45deg, lighten($line, 15%), $line);
-$gradMobile : linear-gradient(to bottom,$gradient2,$line );
+$primary: #303952;
+$secondary: #00cec9;
+$line: #ff5252;
+$gradient1: #7f5a83;
+$gradient2: #303952;
+$grad: linear-gradient(to bottom, $gradient2, $gradient1);
+$grad2: linear-gradient(45deg, lighten($line, 15%), $line);
+$gradMobile: linear-gradient(to bottom, $gradient2, $line);
+$gradSkills: linear-gradient(to bottom, #ffffff, #303952);
 
 $headerHeight: 60px;
 $maxwidth: 960px;
 
-$mobileMax:767px;
-$tabletMin:768px;
-$tabletMax:1023px;
-$desktopMin:1024px;
-
+$mobileMax: 767px;
+$tabletMin: 768px;
+$tabletMax: 1023px;
+$desktopMin: 1024px;
