@@ -38,16 +38,22 @@
       text-align: center;
 
       &:nth-child(1) {
-        background: linear-gradient(to bottom right, #ffffff 0%, #284471 100%);
+        background: #284471;
+        h1 {
+          color: white;
+        }
       }
       &:nth-child(2) {
-        background: linear-gradient(to top, #ffffff 0%, #284471 100%);
+        background: #284471;
         h1 {
           color: white;
         }
       }
       &:nth-child(3) {
-        background: linear-gradient(to bottom left, #ffffff 0%, #284471 100%);
+        background: #284471;
+        h1 {
+          color: white;
+        }
       }
       @include media("min-tablet") {
         width: calc(33% - 10px);
@@ -65,14 +71,14 @@
         }
       }
       p{
-          color:black;
+          color:white;
           text-shadow: 0.1px 0.1px 0px $line;
       }
       a {
        
         display: block;
-        background: linear-gradient(to left, #ffffff 0%, #366abf 100%);
-        color: $line;
+        background:$line ;
+        color: white;
         text-shadow: 1px 1px 0px black;
         text-align: center;
         text-decoration: none;
