@@ -6,7 +6,7 @@ class Skills extends React.Component {
   render() {
     return (
       <div id={SkillStyles.skills}> 
-      <h2>Skills</h2>
+      <h2>Services</h2>
         <div className={SkillStyles.inner}>
           <div className={SkillStyles.item}>
             <div className={SkillStyles.head}>
@@ -24,7 +24,7 @@ class Skills extends React.Component {
           </div>
           <div className={SkillStyles.item}>
             <div className={SkillStyles.head}>
-              <h1>Freelancer</h1>
+              <h1>Front-End</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illo
@@ -34,11 +34,11 @@ class Skills extends React.Component {
               asperiores, aspernatur quas, dolore consequuntur quis ipsam ab
               provident nobis nostrum, quidem quam eaque!
             </p>
-            <a href="#0">Click Me </a>
+            <a href="#0">Click Me</a>
           </div>
           <div className={SkillStyles.item}>
             <div className={SkillStyles.head}>
-              <h1>Freelancer</h1>
+              <h1>Web Developer</h1>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illo
