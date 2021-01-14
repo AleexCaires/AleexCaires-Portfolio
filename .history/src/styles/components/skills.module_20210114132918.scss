@@ -1,0 +1,104 @@
+@import "../_base/variables";
+@import "../mixins/media";
+
+#skills {
+  background: $grad;
+  height:100vh;
+
+  h2 {
+    padding: 150px;
+    text-align: center;
+    color: $line;
+    font-size: 45px;
+    margin: 0;
+  }
+
+  .inner {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+
+    .item {
+      position: relative;
+      width: 100%;
+      border-radius: 15px;
+      margin-bottom: 15px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 30px -5px black;
+      }
+
+      &:nth-child(1) {
+        background: linear-gradient(to top right , #1e2734 50%, #7f5a83 100%);
+        h1 {
+          color: white;
+        }
+      }
+      &:nth-child(2) {
+        background: linear-gradient(to top , #1e2734 50%, #7f5a83 100%);
+        h1 {
+          color: white;
+        }
+      }
+      &:nth-child(3) {
+        background: linear-gradient(to top left , #1e2734 50%, #7f5a83 100%);
+        h1 {
+          color: white;
+          
+        }
+      }
+      @include media("min-tablet") {
+        width: calc(33% - 10px);
+      }
+      @include media("max-laptop") {
+        width: calc(33% - 10px);
+      }
+
+      .head {
+        text-align: center;
+
+        h1 {
+          color: $line;
+          font-size: 25px;
+          //text-shadow: 1px 1px 0px white;
+        }
+      }
+      p {
+        color: white;
+        text-shadow: 0.1px 0.1px 0px $line;
+        padding: 10px;
+      }
+      a {
+        display: block;
+        background: $line;
+        color: white;
+        text-shadow: 1px 1px 0px black;
+        text-align: center;
+        text-decoration: none;
+        transition: all 0.6s ease-in-out;
+        padding: 10px 30px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        &:hover {
+          background-color: white;
+          color: $line;
+        }
+        h1 {
+          color: white;
+        }
+      }
+    }
+  }
+}
