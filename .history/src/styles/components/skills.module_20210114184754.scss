@@ -90,7 +90,7 @@
       p {
         color: grey;
         line-height: 25px;
-        padding: 20px;
+        padding: 5px;
       }
       a {
         display: block;
@@ -104,7 +104,7 @@
         border-radius: 10px;
         margin-bottom: 20px;
         &:hover {
-          background-color: black;
+          background-color: white;
           color: $line;
         }
         h1 {

@@ -54,7 +54,7 @@
         }
       }
       &:nth-child(3) {
-        background: white;
+        bbackground: white;
         h1 {
           color: white;
           line-height: 25px;
@@ -71,13 +71,13 @@
         text-align: center;
 
         h1 {
-          color: grey;
+          color: white;
           font-size: 25px;
           text-shadow: 1px 1px 0px black;
           text-align: center;
         }
         img {
-          width: 45%;
+          width: 35%;
           @include media("max-tablet") {
             width: 35%;
           }
@@ -88,9 +88,9 @@
       }
       
       p {
-        color: grey;
-        line-height: 25px;
-        padding: 20px;
+        color: white;
+        text-shadow: 0.1px 0.1px 0px $line;
+        padding: 10px;
       }
       a {
         display: block;
@@ -104,7 +104,7 @@
         border-radius: 10px;
         margin-bottom: 20px;
         &:hover {
-          background-color: black;
+          background-color: white;
           color: $line;
         }
         h1 {

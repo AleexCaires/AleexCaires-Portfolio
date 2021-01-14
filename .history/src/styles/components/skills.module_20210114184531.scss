@@ -71,9 +71,9 @@
         text-align: center;
 
         h1 {
-          color: grey;
+          color: black;
           font-size: 25px;
-          text-shadow: 1px 1px 0px black;
+          text-shadow: 1px 1px 0px white;
           text-align: center;
         }
         img {
@@ -90,7 +90,7 @@
       p {
         color: grey;
         line-height: 25px;
-        padding: 20px;
+        padding: 10px;
       }
       a {
         display: block;
@@ -104,7 +104,7 @@
         border-radius: 10px;
         margin-bottom: 20px;
         &:hover {
-          background-color: black;
+          background-color: white;
           color: $line;
         }
         h1 {
