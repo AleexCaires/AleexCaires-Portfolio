@@ -9,7 +9,7 @@
   h1 {
     padding: 55px;
     text-align: center;
-    color: #555555;
+    color: #w=;
     font-size: 35px;
     margin: 0;
   }
@@ -64,9 +64,8 @@
 
         p {
           line-height: 29px;
-          color: white;
-          font-size: 20px;
-          line-height: 25px;
+          color: #555555;
+          font-size: 15px;
         }
         @include media("max-mobile") {
           width: 90%;

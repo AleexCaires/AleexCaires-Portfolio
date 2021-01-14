@@ -64,9 +64,8 @@
 
         p {
           line-height: 29px;
-          color: white;
-          font-size: 20px;
-          line-height: 25px;
+          color: #555555;
+          font-size: 15px;
         }
         @include media("max-mobile") {
           width: 90%;

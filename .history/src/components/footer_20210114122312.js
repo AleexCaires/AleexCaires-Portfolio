@@ -25,10 +25,9 @@ class Footer extends React.Component {
                 <nav className={FooterStyle.social}>
                     <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaFacebook /></Link>
                     <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaInstagram /></Link>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaTwitter /></Link>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaLinkedin /></Link>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaGithub /></Link>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaYoutube /></Link>
+                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaFacebook /></Link>
+                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaFacebook /></Link>
+                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaFacebook /></Link>
                     
                 </nav>
                 </div>

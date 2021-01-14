@@ -14,10 +14,9 @@ const About = () => (
           <p>
             Name: Tiago Caires
             </p>
-            <p>Date of Birth: February 16, 1998</p>
-            
-            
+            <p>Date of Birth: February 16, 1</p>
             <p>
+
             Hello my name is Tiago Caires, i am 22 Years old, originally from
             Portugal, Madeira Island, where i studied Science and Technology, to the United Kingdom where i started learning and dived into programming since 2018.
           </p>
@@ -30,3 +29,21 @@ const About = () => (
 
 export default About
 
+// // A small river named Duden flows by their place and supplies it with the necessary regelialia.
+
+// Name:
+// Ronaldo Fredrickson
+// Date of birth:
+// November 28, 1989
+// Address:
+// San Francisco CA 97987 USA
+// Zip code:
+// 1000
+// Email:
+// ronaldo@gmail.com
+// Phone:
+// +1-2234-5678-9-0
+// 120 Project complete
+
+
+// // 

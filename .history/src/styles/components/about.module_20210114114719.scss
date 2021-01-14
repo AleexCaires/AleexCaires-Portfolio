@@ -30,13 +30,13 @@
       border-radius: 15px;
       padding: 15px;
       margin-bottom: 15px;
-      width: calc(100% - 50px);
+      width: calc(100% - 30px);
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-between;
       margin: 25px;
-      background-color: $primary;
+      //background-color: $primary;
       @include media("min-tablet") {
         width: calc(100% - 10px);
       }
@@ -64,9 +64,8 @@
 
         p {
           line-height: 29px;
-          color: white;
-          font-size: 20px;
-          line-height: 25px;
+          color: #555555;
+          font-size: 15px;
         }
         @include media("max-mobile") {
           width: 90%;

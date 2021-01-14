@@ -11,7 +11,7 @@ const About = () => (
         <img src={images} alt="Avatar" />
 
         <div className={AboutStyles.text}>
-          <p>
+          <p font>
             Name: Tiago Caires
             </p>
             <p>Date of Birth: February 16, 1998</p>
@@ -30,3 +30,21 @@ const About = () => (
 
 export default About
 
+// // A small river named Duden flows by their place and supplies it with the necessary regelialia.
+
+// Name:
+// Ronaldo Fredrickson
+// Date of birth:
+// November 28, 1989
+// Address:
+// San Francisco CA 97987 USA
+// Zip code:
+// 1000
+// Email:
+// ronaldo@gmail.com
+// Phone:
+// +1-2234-5678-9-0
+// 120 Project complete
+
+
+// // 

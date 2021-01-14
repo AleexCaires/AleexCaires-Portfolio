@@ -23,13 +23,12 @@ class Footer extends React.Component {
                         <p className={FooterStyle.copyRight}>Created by Alex Caires, all rights reserved <span id="footer-date">2020</span></p>
                     </div>
                 <nav className={FooterStyle.social}>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaFacebook /></Link>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaInstagram /></Link>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaTwitter /></Link>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaLinkedin /></Link>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaGithub /></Link>
-                    <Link className={FooterStyle.icon} to="//www.facebook.com/alex.caires.98/" target="_blank" aria-label="Facebook"><FaYoutube /></Link>
-                    
+                    <Link className={FooterStyle.icon} to="//www.fa" target="_blank" aria-label="Facebook"><FaFacebook /></Link>
+                    <li className={FooterStyle.icon}><FaInstagram /></li>
+                    <li className={FooterStyle.icon}><FaTwitter /></li>
+                    <li className={FooterStyle.icon} href="//www.twitter.com" target="_blank" aria-label="Twitter"><FaLinkedin /></li>
+                    <li className={FooterStyle.icon}><FaYoutube /></li>
+                    <li className={FooterStyle.icon}><FaGithub /></li>
                 </nav>
                 </div>
             </footer>
