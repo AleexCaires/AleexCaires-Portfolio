@@ -1,6 +1,6 @@
 import React from "react"
 import SkillStyles from "../styles/components/skills.module.scss"
-import images1 from '../images/svg-1.svg'
+import images from '../images/svg-1.svg'
 import images2 from '../images/svg-2.svg'
 import images3 from '../images/svg-3.svg'
 
@@ -14,7 +14,7 @@ class Skills extends React.Component {
           <div className={SkillStyles.item}>
             <div className={SkillStyles.head}>
               <h1>Freelancer</h1>
-              <img src={images2} alt="Avatar" />
+              <img src={images3} alt="Avatar" />
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam illo
@@ -24,7 +24,7 @@ class Skills extends React.Component {
               asperiores, aspernatur quas, dolore consequuntur quis ipsam ab
               provident nobis nostrum, quidem quam eaque!
             </p>
-            
+            <a href="#0">Click Me </a>
           </div>
           <div className={SkillStyles.item}>
             <div className={SkillStyles.head}>
@@ -54,7 +54,7 @@ class Skills extends React.Component {
               asperiores, aspernatur quas, dolore consequuntur quis ipsam ab
               provident nobis nostrum, quidem quam eaque!
             </p>
-            
+            <a href="#0">Click Me </a>
           </div>
         </div>
       </div>

@@ -24,7 +24,7 @@ class Skills extends React.Component {
               asperiores, aspernatur quas, dolore consequuntur quis ipsam ab
               provident nobis nostrum, quidem quam eaque!
             </p>
-            
+            <a href="#0">Click Me </a>
           </div>
           <div className={SkillStyles.item}>
             <div className={SkillStyles.head}>
@@ -54,7 +54,7 @@ class Skills extends React.Component {
               asperiores, aspernatur quas, dolore consequuntur quis ipsam ab
               provident nobis nostrum, quidem quam eaque!
             </p>
-            
+            <a href="#0">Click Me </a>
           </div>
         </div>
       </div>
