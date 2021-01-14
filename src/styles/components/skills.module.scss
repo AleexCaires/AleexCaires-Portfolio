@@ -6,11 +6,13 @@
   height:100vh;
 
   h2 {
-    padding: 150px;
+    padding: 55px;
     text-align: center;
     color: $line;
     font-size: 45px;
     margin: 0;
+    margin-bottom: 50px;
+    
   }
 
   .inner {
@@ -37,7 +39,7 @@
       justify-content: space-around;
       &:hover {
         transform: scale(1.05);
-        box-shadow: 0 10px 30px -5px black;
+        box-shadow: 0 1px 1px 0px black;
       }
 
       &:nth-child(1) {
@@ -98,7 +100,6 @@
         display: block;
         background: black;
         color: white;
-        text-shadow: 1px 1px 0px black;
         text-align: center;
         text-decoration: none;
         transition: all 0.6s ease-in-out;
@@ -107,11 +108,9 @@
         margin-bottom: 20px;
         &:hover {
           background-color: $line;
-          color: $line;
+          color: black;
         }
-        h1 {
-          color: white;
-        }
+        
       }
     }
   }

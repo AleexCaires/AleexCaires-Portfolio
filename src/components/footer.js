@@ -1,6 +1,5 @@
 import React from "react"
 import $ from "jquery/dist/jquery"
-//import IGICON from "../components/i-ig"
 import FooterStyle from "../styles/components/footer.module.scss"
 import { Link } from "gatsby";
 import { FaFacebook, FaInstagram, FaLinkedin , FaYoutube, FaTwitter, FaGithub} from 'react-icons/fa'
