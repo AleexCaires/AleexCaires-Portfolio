@@ -1,0 +1,58 @@
+@import "../_base/variables";
+
+#main{
+    background-color: white;
+    height: 70vh;
+    margin: 0 auto;
+
+h1{
+    color: $grad2;
+    font-size: 36px;
+    text-align: center;
+}
+
+}
+form {
+  width: 50%;
+  margin: 50px auto;
+  min-width: 9rem;
+  
+}
+  
+input, textarea {
+  float: left;
+  width: 100%;
+  max-width: 100%;
+  border: none;
+  margin: 0.5rem 0;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  background: darken(#f9f9f9, 10%);
+  color: darken(#f9f9f9, 50%);
+  
+  &[type=submit] {
+    background: $gradient1;
+    color: #fff;
+    width: auto;
+    float: right;
+    margin-bottom: 50px;
+  }
+
+  &::placeholder {
+    color: darken(#f9f9f9,55%);
+  }
+
+  &.error {
+    background: $red;
+    color: #fff;
+    &::placeholder {
+      color: darken($red, 60%);
+    }
+  }
+}
+textarea {
+  height: 10rem;
+}
+
+
+
