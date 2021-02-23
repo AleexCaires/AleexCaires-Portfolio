@@ -69,6 +69,11 @@
           color: black;
           font-size: 18px;
           line-height: 26px;
+          a{
+            list-style: none;
+            color:$line;
+            text-decoration: none;
+          }
         }
         h3{
           font-size: 22px;
