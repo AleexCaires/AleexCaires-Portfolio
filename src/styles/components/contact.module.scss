@@ -1,21 +1,24 @@
 @import "../_base/variables";
 
 #main{
-    background-color: white;
+    background: linear-gradient(to bottom, #ffffff 0%, #303952 100%);
     height: 70vh;
     margin: 0 auto;
+    
 
 h1{
-    color: $grad2;
+    color: $line;
     font-size: 36px;
     text-align: center;
+    margin-top: 0px;
+    padding: 35px;
 }
 
-}
 form {
   width: 50%;
   margin: 50px auto;
   min-width: 9rem;
+  
   
 }
   
@@ -25,17 +28,17 @@ input, textarea {
   max-width: 100%;
   border: none;
   margin: 0.5rem 0;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   border-radius: 0.3rem;
   background: darken(#f9f9f9, 10%);
   color: darken(#f9f9f9, 50%);
   
   &[type=submit] {
-    background: $gradient1;
+    background: $line;
     color: #fff;
     width: auto;
     float: right;
-    margin-bottom: 50px;
+    margin-bottom: 25px;
   }
 
   &::placeholder {
@@ -52,6 +55,7 @@ input, textarea {
 }
 textarea {
   height: 10rem;
+}
 }
 
 
