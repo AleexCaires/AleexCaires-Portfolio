@@ -11,7 +11,6 @@ const Layout = (props) => (
         <section className={layoutStyles.contentContainer} >
             {props.children}  
         </section>
-        <Contact />
         <Footer />
     </section>
 )
