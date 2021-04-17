@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import {navigate} from "gatsby";
-import '../styles/components/contact.module.scss';
+import ContactStyles from'../styles/components/contact.module.scss';
 
 function encode(data) {
     return Object.keys(data).map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])).join("&");
@@ -53,10 +53,10 @@ const ContactPage = () => {
     }
 
     return(
-            <div className="contact-layout" >
-                <div className="inner">
-                    <h1>Say hello!</h1>
-                    <p>If you want to get in touch to discuss about an amazing project opportunity, job role, consultancy or if you just want to say "Hi", feel free to contact me via using one of the options bellow.</p>
+            <div className={ContactStyles.contact}>
+                <div className={ContactStyles.inner}>
+                    <h1>Hello!</h1>
+                    <p>If you want to get in touch to discuss about an project opportunity, job role, or anything else feel free to contact me via using one of the options bellow.</p>
                     <ul>
                         <li>Twiter <a href="https://twitter.com/MDesignsuk" rel="noopener noreferrer" target="_blank">@MDesignsUK</a>.</li>
                         <li>LinkedIn <a href="https://www.linkedin.com/in/mario-duarte-developer/" rel="noopener noreferrer" target="_blank">@mario-duarte-developer</a></li>
@@ -66,28 +66,26 @@ const ContactPage = () => {
 
                     <form name="contact" method="POST" action="" netlify-honeypot="bot-field" data-netlify="true" onSubmit={(e)=>handleSubmitForm(e)}>
 
-                        <p className="hidden">
+                        <p className={ContactStyles.hidden}>
                             <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
                         </p>
 
-                        <div className="field-group">
+                        <div className={ContactStyles.fieldGroup}>
                             <label htmlFor="email">Email address:</label>
                             <input id="email" name="email" type="email" placeholder="Your email address..." required onChange={(e)=>handleChangeEmail(e)}/>
                         </div>
 
-                        <div className="field-col-group">
-                            <div className="field-group">
+                            <div className={ContactStyles.fieldGroup}>
                                 <label htmlFor="fullName">Name:</label>
                                 <input id="fullName" type="text" name="fullName" placeholder="Your full name..." required onChange={(e)=>handleChangeName(e)}/>
                             </div>
-                        </div>
 
-                        <div className="field-group">
+                        <div className={ContactStyles.fieldGroup}>
                             <label htmlFor="message">Your message:</label>
                             <textarea id="message" name="message" rows="10" placeholder="Hi Tiago Caires..." required onChange={(e)=>handleChangeMessage(e)}></textarea>
                         </div>
 
-                        <input className="btn-primary" type="submit" value="Send message" />
+                        <input className={ContactStyles.btnPrimary} type="submit" value="Send message" />
 
                     </form>
 
