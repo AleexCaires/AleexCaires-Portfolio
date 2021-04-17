@@ -1,6 +1,6 @@
 @import "../_base/variables";
 
-.contact-layout {
+.contact {
   position: relative;
   background: linear-gradient(to bottom, #ffffff 0%, #303952 100%);
   color: black;
@@ -35,13 +35,31 @@
       width: 100%;
       padding: 20px;
       border-radius: 10px;
+      background-color: $line;
 
-      .field-group{
+      .hidden{
+        display: none;
+      }
+
+      .fieldGroup{
         position: relative;
         margin-bottom: 10px;
+
+        label{
+          display: block;
+          width: 100%;
+          margin-bottom: 5px;
+        }
+        input{
+          width: calc(100% - 10px);
+        }
+        textarea{
+          width: calc(100% - 10px);
+        }
+        }
       }
     }
-    .btn-primary {
+    .btnPrimary {
       background-color: $line;
       color:#ffffff;
       cursor: pointer;
@@ -49,5 +67,4 @@
       border-radius: 3px;
     }
   }
-
- }
+ 
