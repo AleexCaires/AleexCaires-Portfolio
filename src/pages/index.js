@@ -1,15 +1,22 @@
-import React from "react"
-import Layout from "../components/layout"
-import Hero from "../components/hero"
-import About from "../components/about"
-import Contact from "../components/contact"
+import React from 'react';
+import { Helmet } from 'react-helmet';
+import App from '../components/App';
+import { headData } from '../mock/data';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../style/main.scss';
 
-const Home = () => (
-  <Layout>
-    <Hero />
-    <About />
-    <Contact />
-  </Layout>
-)
+export default () => {
+  const { title, lang, description } = headData;
 
-export default Home
+  return (
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>{title || 'Alex Portfolio'}</title>
+        <html lang={lang || 'en'} />
+        <meta name="description" content={description || 'Alex Portfolio'} />
+      </Helmet>
+      <App />
+    </>
+  );
+};
