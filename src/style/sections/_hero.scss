@@ -1,0 +1,147 @@
+@keyframes blink {
+  0% {opacity: 0;}
+  49% {opacity: 0;}
+  50% {opacity: 1;}
+  99% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+#hero {
+  padding:0;
+
+  .background-image{
+    // background: red;
+    background: url("https://images.unsplash.com/photo-1509966756634-9c23dd6e6815?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1420&q=80");
+    background-position: center;
+    background-size: cover; 
+    min-height: 100vh;
+    min-width: 100vh;
+    height: 100vh;
+    align-items: center;
+    filter: blur(4px);
+    position: relative;
+    display: flex;
+    @include respond(tab-land) {
+      background-size: cover;
+    }
+    @include respond(tab-port) {
+    }
+    @include respond(phone) {
+
+    }
+    @include respond(phone-xs) {
+    }
+  }
+
+  .container{
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 40%; /* Adjust this value to move the positioned div up and down */
+    text-align: center;
+    width: 60%; /* Set the width of the positioned div */
+      
+  }
+
+
+
+  @include respond(phone) {
+    padding: 0rem $default-font-size;
+  }
+
+  .inner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+    text-align:start;
+    color: whitesmoke;
+    padding: 0 20px;
+    z-index: 2;
+
+
+  h2{
+      font-size: 5.6rem;
+      font-weight: 700;
+      margin-bottom: 3.2rem;
+      text-align: left;
+      filter:none;
+
+      @include respond(tab-land) {
+        font-size: 4rem;
+      }
+      @include respond(tab-port) {
+        font-size: 3.6rem;
+      }
+      @include respond(phone) {
+        font-size: 3.5rem;
+        line-height: 1.5;
+      }
+      @include respond(phone-xs) {
+        font-size: 2.8rem;
+      }
+      span{
+          position: relative;
+          text-shadow: 1px 1px 0px rgba(0,0,0,0.9);
+          margin-right: 5px;
+          &:after {
+              content: "";
+              position: absolute;
+              right: -4px;
+              top: 0;
+              bottom: 0;
+              width: 2px;
+              background-color:$primary-color;
+              opacity: 0;
+              animation: blink 0.8s linear 0s infinite forwards;
+          }
+      }
+  }
+  }
+  #text {
+    color: $secondary-color;
+  }
+
+  .hero-title {
+    font-size: 5.6rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-align: left;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.8rem;
+    }
+  }
+
+  .hero-cta {
+    display: flex;
+    text-align: left;
+
+    @include respond(tab-port) {
+      // justify-content: center;
+    }
+
+    & a {
+      font-size: 2.4rem;
+
+      @include respond(phone) {
+        font-size: 2rem;
+      }
+    }
+  }
+}
