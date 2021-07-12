@@ -77,4 +77,6 @@ export const footerData = {
       url: 'https://github.com/AleexCaires',
     },
   ],
+
 };
+

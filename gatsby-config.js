@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 module.exports = {
   plugins: [
     `gatsby-plugin-sass`,
@@ -5,6 +7,9 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`, // Needed for dynamic images
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -31,5 +36,14 @@ module.exports = {
         icon: 'src/images/favicon.png',
       },
     },
+    
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: path.join(__dirname, `src`, `images`),
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ],
 };
