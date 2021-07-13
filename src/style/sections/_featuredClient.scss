@@ -1,10 +1,11 @@
 #main {
     position: relative;
     width: 100%;
+    margin-bottom: 50px;
     h1{
         margin-top: -60px;
         font-weight: bold;
-        font-size: 4rem;
+        font-size: 3.5rem;
         margin-bottom: 50px;
     }
 
@@ -16,25 +17,26 @@
         color: black;
     }
     .featured-images { 
-        width: 100%;
+        position: relative;
+        max-width: 960px;
         display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-between;
         position: relative;
         align-items: flex-start;
-        img{
-            width: calc(20% - 5px);
-            height: auto;
-            }
+        margin:0 auto;
+        
             @include respond(phone) {
                 display: flex;
                 flex-direction: column;
-                flex-wrap: nowrap;
+                flex-wrap: wrap;
                 justify-content: space-between;
                 position: relative;
                 align-items: center;
                 top: 0px !important;
+                padding:5px;
+
               }
               @include respond(tab-land) {
                 display: flex;
@@ -44,6 +46,8 @@
                 position: relative;
                 align-items: center;
                 top: 0px !important;
+                padding:5px;
               }
     }
+
 }
