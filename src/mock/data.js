@@ -35,15 +35,7 @@ export const projectsData = [
     url: 'https://free-hand.vercel.app/',
     repo: 'https://github.com/AleexCaires/FreeHand', // if no repo, the button will not show up
   },
-  {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: '', // if no repo, the button will not show up
-  },
+  
 ];
 
 // CONTACT DATA
