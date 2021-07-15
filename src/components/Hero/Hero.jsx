@@ -3,6 +3,7 @@ import { Container } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
+import Typewriter from 'typewriter-effect';
 
 
 
@@ -13,18 +14,7 @@ const Header = () => {
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   
-  const phrases = ["Web Developer", "Front End Developer","Technology Lover", "Aspiring Fullstack Developer", "Freelancer"];
-  const text = document.getElementById('text');
-  let word = 0;
-  let letter = 0;
-  // Direction true writes a new word
-  // Direction false erases existing word
-  let direction = false;
-
-  function changeWord(){
-      word > (phrases.length - 1) ? word = 0 : //null ;
-      text.innerText = phrases[word].slice(0, -(phrases[word].length - 1));
-  }
+const phrases = ["Web Developer", "Front End Developer","Technology Lover", "Aspiring Fullstack Developer", "Freelancer"];
 
 
   useEffect(() => {
@@ -42,10 +32,22 @@ const Header = () => {
       <div className="background-image"></div>
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
-        <div className="inner">
-          <h1 className="hero-title">Hello, </h1>
-          <h2>I am Tiago Caires a<br/><span id="text">Web Developer</span> from London.</h2>
-          </div>
+        <div id="hero">
+                    <div className="inner">
+                        <h2>Hello,</h2>
+                        <h2>I am Tiago Caires a<br/>
+                          <span>
+                          <Typewriter
+                            options={{
+                              strings: ["Web Developer", "Front End Developer","Technology Lover", "Aspiring Fullstack Developer", "Freelancer"],
+                              autoStart: true,
+                              loop: true,
+                              delay: 175,
+                            }}
+                          />
+                            </span> from London.</h2>
+                    </div>
+                </div>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
           <p className="hero-cta">

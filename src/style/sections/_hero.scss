@@ -96,8 +96,15 @@
               width: 2px;
               background-color:$primary-color;
               opacity: 0;
-              animation: blink 0.8s linear 0s infinite forwards;
+              
           }
+    .Typewriter__wrapper{
+      color: $secondary-color;
+    }
+    .Typewriter__cursor{
+      color: $secondary-color;
+      animation: blink 0.8s linear 0s infinite forwards;
+    }
       }
   }
   }
