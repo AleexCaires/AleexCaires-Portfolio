@@ -42,7 +42,7 @@ const Images = ({ src, ...rest }) => {
   return <Img fluid={childImageSharp.fluid} {...rest} />;
 };
 
-Image.propTypes = {
+Images.propTypes = {
   src: PropTypes.string.isRequired,
   alt: PropTypes.string,
 };
