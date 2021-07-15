@@ -43,12 +43,6 @@
       
   }
 
-
-
-  @include respond(phone) {
-    padding: 0rem $default-font-size;
-  }
-
   .inner{
     position: relative;
     display: flex;
@@ -61,6 +55,19 @@
     color: whitesmoke;
     padding: 0 20px;
     z-index: 2;
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+    @include respond(tab-port) {
+      font-size: 3.6rem;
+    }
+    @include respond(phone) {
+      font-size: 3.5rem;
+      line-height: 1.5;
+    }
+    @include respond(phone-xs) {
+      font-size: 2.0rem;
+    }
 
 
   h2{
@@ -77,11 +84,10 @@
         font-size: 3.6rem;
       }
       @include respond(phone) {
-        font-size: 3.5rem;
-        line-height: 1.5;
+        font-size: 2.5rem;
       }
       @include respond(phone-xs) {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
       }
       span{
           position: relative;
@@ -115,7 +121,7 @@
   .hero-title {
     font-size: 5.6rem;
     font-weight: 700;
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     text-align: left;
 
     @include respond(tab-land) {
@@ -127,9 +133,12 @@
     @include respond(phone) {
       font-size: 3.5rem;
       line-height: 1.5;
+      margin-top: -20px;
     }
     @include respond(phone-xs) {
       font-size: 2.8rem;
+      margin-top: -20px;
+
     }
   }
 
