@@ -8,13 +8,13 @@ import PortfolioContext from '../../context/context';
 
 const Header = () => {
   const { hero } = useContext(PortfolioContext);
-  const { title, name, subtitle, cta } = hero;
+  const { cta } = hero;
 
   const [isDesktop, setIsDesktop] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   
-const phrases = ["Web Developer", "Front End Developer","Technology Lover", "Aspiring Fullstack Developer", "Freelancer"];
-const text = document.getElementById('text');
+  const phrases = ["Web Developer", "Front End Developer","Technology Lover", "Aspiring Fullstack Developer", "Freelancer"];
+  const text = document.getElementById('text');
   let word = 0;
   let letter = 0;
   // Direction true writes a new word
@@ -26,43 +26,6 @@ const text = document.getElementById('text');
       text.innerText = phrases[word].slice(0, -(phrases[word].length - 1));
   }
 
-  function wordAnimation() {
-
-      setTimeout(()=>{
-          if (direction) {
-              if ( letter <= phrases[word].length ) {
-                  if ( letter !== 0 ) {
-                      //console.log(phrases[word].slice(0, letter));
-                      text.innerText = String(phrases[word]).slice(0, letter);
-                  }
-                  letter++;
-                  wordAnimation();
-              } else {
-                  letter = 0;
-                  direction = false;
-                  wordAnimation();
-              }
-          } else {
-              if ( letter <= phrases[word].length ) {
-                  if ( letter !== 0 ) {
-                      //console.log(phrases[word].slice(0, letter));
-                      text.innerText = String(phrases[word]).slice(0, -letter);
-                  }
-                  letter++;
-                  wordAnimation();
-              } else {
-                  word++;
-                  letter = 0;
-                  changeWord();
-                  direction = true;
-                  wordAnimation();
-              }
-          }
-      }, 250);
-
-  }
-
-  wordAnimation();
 
   useEffect(() => {
     if (window.innerWidth > 769) {
