@@ -37,12 +37,12 @@ export const projectsData = [
   },
   {
     id: nanoid(),
-    img: 'work.jpg',
-    title: 'FreeHand',
-    info: 'FreeHand is a simple 1 page project ive built using react,styled components, react icons, react router dom and a few others react components. Its a fully responsive webpage.',
-    info2: '',
-    url: 'https://free-hand.vercel.app/',
-    repo: 'https://github.com/AleexCaires/FreeHand', // if no repo, the button will not show up
+    img: 'QuizGame.png',
+    title: 'Quiz Game',
+    info: 'This is a simple Quiz application built with React and Typescript, we get the random questions from Trivia API.',
+    info2: 'Next steps on this project will be adding a leaderboard, and add a difficulty selector.(WIP) ',
+    url: 'https://jogo-da-perguntinha.vercel.app/',
+    repo: 'https://github.com/AleexCaires/Quiz-Game', // if no repo, the button will not show up
   },
   
 ];
