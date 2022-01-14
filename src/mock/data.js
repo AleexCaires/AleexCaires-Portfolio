@@ -35,6 +35,15 @@ export const projectsData = [
     url: 'https://free-hand.vercel.app/',
     repo: 'https://github.com/AleexCaires/FreeHand', // if no repo, the button will not show up
   },
+  {
+    id: nanoid(),
+    img: 'work.jpg',
+    title: 'FreeHand',
+    info: 'FreeHand is a simple 1 page project ive built using react,styled components, react icons, react router dom and a few others react components. Its a fully responsive webpage.',
+    info2: '',
+    url: 'https://free-hand.vercel.app/',
+    repo: 'https://github.com/AleexCaires/FreeHand', // if no repo, the button will not show up
+  },
   
 ];
 
