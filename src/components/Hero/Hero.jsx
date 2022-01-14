@@ -34,12 +34,12 @@ const phrases = ["Web Developer", "Front End Developer","Technology Lover", "Asp
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
         <div id="hero">
                     <div className="inner">
-                        <h2>Hello,</h2>
+                        <h1>Hello,</h1>
                         <h2>I am Tiago Caires a<br/>
                           <span>
                           <Typewriter
                             options={{
-                              strings: ["Web Developer", "Front End Developer","Technology Lover", "Aspiring Fullstack Developer", "Freelancer"],
+                              strings: ["Web Developer", "Front End Developer","Technology Lover", "Freelancer"],
                               autoStart: true,
                               loop: true,
                               delay: 175,
