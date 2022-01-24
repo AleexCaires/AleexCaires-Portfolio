@@ -7,6 +7,7 @@ import Footer from './Footer/Footer';
 import FeaturedClients from './Featured Clients/FeaturedClients';
 
 import { PortfolioProvider } from '../context/context';
+import Rive from 'rive-react';
 
 import { heroData, aboutData, projectsData, contactData, footerData } from '../mock/data';
 
@@ -26,7 +27,7 @@ function App() {
   }, []);
 
   return (
-    <PortfolioProvider value={{ hero, about, projects, contact, footer }}>
+    <PortfolioProvider value={{ hero, about, projects, contact, footer }}> 
       <Hero />
       <About />
       <Projects />

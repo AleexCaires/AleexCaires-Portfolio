@@ -5,6 +5,8 @@ import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import Typewriter from 'typewriter-effect';
 
+import Rive from 'rive-react';
+
 
 
 const Header = () => {
@@ -29,7 +31,9 @@ const phrases = ["Web Developer", "Front End Developer","Technology Lover", "Asp
 
   return (
     <section id="hero" >
-      <div className="background-image"></div>
+      <div className="background-image">
+        <Rive src="animation.riv" animations="Animation 1" />
+      </div>
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
         <div id="hero">
