@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import PortfolioContext from '../../context/context';
 import Typewriter from 'typewriter-effect';
 
-import Rive from 'rive-react';
+import AnimationBackground from '../Animation'
 
 
 
@@ -32,7 +32,7 @@ const phrases = ["Web Developer", "Front End Developer","Technology Lover", "Asp
   return (
     <section id="hero" >
       <div className="background-image">
-        <Rive src="animation.riv" animations="Animation 1" />
+        <AnimationBackground />
       </div>
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
