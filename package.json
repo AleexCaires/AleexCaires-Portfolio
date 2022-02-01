@@ -38,6 +38,7 @@
     "react-tilt": "^0.1.4",
     "rive-react": "0.0.31",
     "styled-components": "^5.3.0",
+    "swiper": "6.8.4",
     "typewriter-effect": "^2.18.0"
   },
   "devDependencies": {
