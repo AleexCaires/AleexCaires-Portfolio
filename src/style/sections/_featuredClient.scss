@@ -1,24 +1,8 @@
 #main {
-    position: relative;
-    width: 100%;
-    margin-bottom: 50px;
-    h1{
-        margin-top: -60px;
-        font-weight: bold;
-        font-size: 3.5rem;
-        margin-bottom: 50px;
-    }
-
-    .inner{
-        position:relative;
-        max-width: 960px;
-        height: 100%;
-        margin: 0 auto;
-        color: black;
-    }
+   
     .featured-images { 
         position: relative;
-        max-width: 960px;
+        max-width: 1235px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
