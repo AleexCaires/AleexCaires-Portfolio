@@ -25,7 +25,8 @@ const About = () => {
   var date = new Date().getFullYear();
   console.log(date)
 
-  let age = date - 1998
+
+  const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
   return (
     <section id="about">
       <Container>
@@ -42,7 +43,7 @@ const About = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                <p>My name is <strong>Tiago Caires,</strong> I am {age} Years old, originally from
+                <p>My name is <strong>Tiago Caires,</strong> I am {getAge('1998-02-16')} Years old, originally from
             Portugal, Madeira Island, where I studied Science and Technology, to the United Kingdom where I started learning and dived into programming since 2018.
           </p>
           <h2><strong>Experience</strong></h2>
