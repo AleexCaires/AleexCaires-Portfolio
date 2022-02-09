@@ -11,17 +11,15 @@ SwiperCore.use([Autoplay]);
 export default () => {
     
   return (
-      
-      
     <Swiper
     // install Swiper modules
     modules={[Navigation, Pagination, Scrollbar]}
     spaceBetween={35}
-    slidesPerView={4}
+    slidesPerView={3}
     breakpoints={{
         0: {
           width: 0,
-          slidesPerView: 1,
+          slidesPerView: 2,
           alignContent: "center",
         },
         768: {
@@ -31,7 +29,7 @@ export default () => {
         },
         1200: {
           width: 1200,
-          slidesPerView: 5,
+          slidesPerView: 3,
           alignContent: "center"
         },
       }}

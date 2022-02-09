@@ -39,7 +39,7 @@ const phrases = ["Web Developer", "Front End Developer","Technology Lover", "Asp
         <div id="hero">
                     <div className="inner">
                         <h1>Hello,</h1>
-                        <h2>I am Tiago Caires a<br/>
+                        <h2>I am Alex Caires a<br/>
                           <span>
                           <Typewriter
                             options={{

@@ -10,6 +10,7 @@
         position: relative;
         align-items: flex-start;
         margin:0 auto;
+        overflow: hidden;
         
             @include respond(phone) {
                 display: flex;
