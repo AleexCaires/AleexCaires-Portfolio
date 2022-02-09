@@ -5,6 +5,7 @@ import Title from '../Title/Title';
 import AboutImg from '../Image/AboutImg';
 import PortfolioContext from '../../context/context';
 
+
 const About = () => {
   const { about } = useContext(PortfolioContext);
   const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
@@ -24,6 +25,7 @@ const About = () => {
 
   var date = new Date().getFullYear();
   console.log(date)
+
 
 
   const getAge = birthDate => Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e+10)
@@ -57,11 +59,11 @@ const About = () => {
                 {resume && (
                   <span className="d-flex mt-3">
                     <a
+                      
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href= "https://drive.google.com/file/d/1udY3LN00LRehIQBq7-D5bqcob-LFYyKM/view?usp=sharing"
-                      download= "Resume.pdf"
+                      href={resume} download="Resume"
                     >
                       Download CV
                     </a>

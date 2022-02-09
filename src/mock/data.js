@@ -1,4 +1,5 @@
 import { nanoid } from 'nanoid';
+import Resume from '../../public/Resume.pdf'
 
 // HEAD DATA
 export const headData = {
@@ -13,7 +14,7 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://drive.google.com/file/d/1udY3LN00LRehIQBq7-D5bqcob-LFYyKM/view?usp=sharing', // if no resume, the button will not show up
+  resume: Resume // if no resume, the button will not show up
 };
 
 // PROJECTS DATA
