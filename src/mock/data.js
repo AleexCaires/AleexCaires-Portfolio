@@ -41,7 +41,7 @@ export const projectsData = [
 
 // CONTACT DATA
 export const contactData = {
-  cta: '',
+  cta: 'Do you want to know more about',
   btn: '',
   email: 'tiagoaleex@gmail.com',
 };

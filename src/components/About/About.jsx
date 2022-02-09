@@ -60,8 +60,8 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href= "../../Resume (1).pdf"
-                      download = "Resume"
+                      href= "https://drive.google.com/file/d/1udY3LN00LRehIQBq7-D5bqcob-LFYyKM/view?usp=sharing"
+                      download= "Resume.pdf"
                     >
                       Download CV
                     </a>
