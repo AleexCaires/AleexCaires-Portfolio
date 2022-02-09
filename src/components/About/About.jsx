@@ -51,7 +51,7 @@ const About = () => {
             build and delivery websites, emails and banner adds for their key clients such as <b>Sharp</b>, <b>AstraZeneca</b>, <b>Lyxor ETF</b> and many others.</p>
             <h2><strong>Hobbies</strong></h2>
             <p>Progamming is not my only passion I also like to do Exercise, Nature Walks, Mountain biking and <b><a title="Twitch Channel" href="https://www.twitch.tv/alexigurtes" target="_blank" rel="noopener noreferrer">Gaming</a></b> </p>
-            <p>If you want to know more about me, download my resume in the button bellow.</p>
+            <p>To get to know more about me, download the CV in the button bellow.</p>
             </p>
 
                 {resume && (
@@ -60,9 +60,10 @@ const About = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="cta-btn cta-btn--resume"
-                      href={resume}
+                      href= "../../Resume (1).pdf"
+                      download = "Resume"
                     >
-                      Resume
+                      Download CV
                     </a>
                   </span>
                 )}
