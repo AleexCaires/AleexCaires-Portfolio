@@ -43,15 +43,15 @@ const About = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                <p>My name is <strong>Tiago Caires,</strong> I am {getAge('1998-02-16')} Years old, originally from
-            Portugal, Madeira Island, where I studied Science and Technology, to the United Kingdom where I started learning and dived into programming since 2018.
+                <p>My name is <strong>Alex Caires,</strong> I am {getAge('1998-02-16')} Years old, originally from
+            Portugal, Madeira Island, where I studied Science and Technology, to the United Kingdom where I started learning and dived into programming since 2020.
           </p>
           <h2><strong>Experience</strong></h2>
-          <p>Worked for a few small projects for some local companies and agencies such as <b>Collider</b>, as a <b>Freelancer</b> where I had the opportunity to help
-            build and delivery websites, emails and banner adds for their key clients such as <b>Sharp</b>, <b>AstraZeneca</b> and <b>Lyxor ETF</b> and many others.</p>
+          <p>Worked for a few projects for some local companies and agencies such as <b>Collider</b> and <b>Redgrain</b>, as a <b>Freelancer</b> where I had the opportunity to help
+            build and delivery websites, emails and banner adds for their key clients such as <b>Sharp</b>, <b>AstraZeneca</b>, <b>Lyxor ETF</b> and many others.</p>
             <h2><strong>Hobbies</strong></h2>
-            <p>Progamming is not my only passion i also like to do Exercise, Nature Walks, Mountain biking and <b><a title="Twitch Channel" href="https://www.twitch.tv/alexigurtes" target="_blank" rel="noopener noreferrer">Gaming</a></b> </p>
-            <p>If you want to know more about me, download my resume in the button bellow</p>
+            <p>Progamming is not my only passion I also like to do Exercise, Nature Walks, Mountain biking and <b><a title="Twitch Channel" href="https://www.twitch.tv/alexigurtes" target="_blank" rel="noopener noreferrer">Gaming</a></b> </p>
+            <p>If you want to know more about me, download my resume in the button bellow.</p>
             </p>
 
                 {resume && (
