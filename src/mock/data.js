@@ -2,17 +2,9 @@ import { nanoid } from 'nanoid';
 
 // HEAD DATA
 export const headData = {
-  title: 'Portfolio', // e.g: 'Name | Developer'
+  title: 'Alex Caires | Portfolio', // e.g: 'Name | Developer'
   lang: 'EN', // e.g: en, es, fr, jp
-  description: '', // e.g: Welcome to my website
-};
-
-// HERO DATA
-export const heroData = {
-  title: '',
-  name: '',
-  subtitle: '',
-  cta: '',
+  description: 'Welcome to my Portfolio website', // e.g: Welcome to my website
 };
 
 // ABOUT DATA
@@ -30,7 +22,7 @@ export const projectsData = [
     id: nanoid(),
     img: 'work.jpg',
     title: 'FreeHand',
-    info: 'FreeHand is a simple 1 page project ive built using react,styled components, react icons, react router dom and a few others react components. Its a fully responsive webpage.',
+    info: 'FreeHand is a simple 1 page project I built using react,styled components, react icons, react router dom and a few others react components. Its a fully responsive webpage.',
     info2: '',
     url: 'https://free-hand.vercel.app/',
     repo: 'https://github.com/AleexCaires/FreeHand', // if no repo, the button will not show up
