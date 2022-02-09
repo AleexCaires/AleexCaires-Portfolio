@@ -29,7 +29,7 @@ export default () => {
         },
         1200: {
           width: 1200,
-          slidesPerView: 3,
+          slidesPerView: 4,
           alignContent: "center"
         },
       }}
