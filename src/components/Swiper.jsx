@@ -19,12 +19,12 @@ export default () => {
     breakpoints={{
         0: {
           width: 0,
-          slidesPerView: 2,
+          slidesPerView: 1,
           alignContent: "center",
         },
         768: {
           width: 768,
-          slidesPerView: 2,
+          slidesPerView: 3,
           alignContent: "center",
         },
         1200: {
