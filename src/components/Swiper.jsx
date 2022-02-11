@@ -35,7 +35,7 @@ export default () => {
       }}
     loop={true}
     autoplay={{
-        delay: 2500,
+        delay: 2400,
         disableOnInteraction: false,
       }}
     onSwiper={(swiper) => console.log(swiper)}
